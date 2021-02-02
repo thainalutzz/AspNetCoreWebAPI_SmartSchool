@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmartSchool.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="T:SmartSchool.WebAPI.V1.Controllers.AlunoController">
+            <sumary>
+            Versão 1 do controlador de Aluno
+            </sumary>
+        </member>
+        <member name="M:SmartSchool.WebAPI.V1.Controllers.AlunoController.#ctor(SmartSchool.WebAPI.Data.IRepository,AutoMapper.IMapper)">
+             <sumary>
+            
+             </sumary>
+             <param name="repo"></param>
+             <param name="mapper"></param>
+        </member>
+        <member name="M:SmartSchool.WebAPI.V1.Controllers.AlunoController.Get">
+            <sumary>
+            Método responsável por retornar todos os alunos
+            </sumary>
+        </member>
+        <member name="M:SmartSchool.WebAPI.V1.Controllers.AlunoController.GetById(System.Int32)">
+            <sumary>
+            Método responsável por retornar apenas um aluno através do Id
+            </sumary>
+        </member>
+        <member name="T:SmartSchool.WebAPI.V1.Controllers.ProfessorController">
+            <sumary>
+            Versão 1 do controlador de Professor
+            </sumary>
+        </member>
+        <member name="T:SmartSchool.WebAPI.V1.Dtos.AlunoRegistrarDto">
+             <sumary>
+            DTO de Aluno
+             </sumary>
+        </member>
+        <member name="P:SmartSchool.WebAPI.V1.Dtos.AlunoRegistrarDto.Id">
+             <sumary>
+            Id do Aluno
+             </sumary>
+        </member>
+        <member name="T:SmartSchool.WebAPI.V2.Controllers.AlunoController">
+            <sumary>
+            Versão 2 do controlador de Aluno
+            </sumary>
+        </member>
+        <member name="M:SmartSchool.WebAPI.V2.Controllers.AlunoController.#ctor(SmartSchool.WebAPI.Data.IRepository,AutoMapper.IMapper)">
+             <sumary>
+            
+             </sumary>
+             <param name="repo"></param>
+             <param name="mapper"></param>
+        </member>
+        <member name="M:SmartSchool.WebAPI.V2.Controllers.AlunoController.Get">
+            <sumary>
+            Método responsável por retornar todos os alunos
+            </sumary>
+        </member>
+        <member name="M:SmartSchool.WebAPI.V2.Controllers.AlunoController.GetById(System.Int32)">
+            <sumary>
+            Método responsável por retornar apenas um aluno através do Id
+            </sumary>
+        </member>
+        <member name="T:SmartSchool.WebAPI.V2.Dtos.AlunoRegistrarDto">
+             <sumary>
+            DTO de Aluno
+             </sumary>
+        </member>
+        <member name="P:SmartSchool.WebAPI.V2.Dtos.AlunoRegistrarDto.Id">
+             <sumary>
+            Id do Aluno
+             </sumary>
+        </member>
+    </members>
+</doc>

@@ -4,18 +4,27 @@ using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SmartSchool.WebAPI.Data;
-using SmartSchool.WebAPI.Dtos;
+using SmartSchool.WebAPI.V1.Dtos;
 using SmartSchool.WebAPI.Models;
 
-namespace SmartSchool.WebAPI.Controllers
+namespace SmartSchool.WebAPI.V1.Controllers
 {
-    [Route("api/[controller]")]
+    /// <sumary>
+    /// Versão 1 do controlador de Aluno
+    /// </sumary>
+    [ApiVersion("1.0")]
+    [Route("api/v{version:apiVersion}[controller]")]
     [ApiController]
     public class AlunoController : ControllerBase
     {
         public readonly IRepository _repo;
         private readonly IMapper _mapper;
 
+        /// <sumary>
+        ///
+        /// </sumary>
+        /// <param name="repo"></param>
+        /// <param name="mapper"></param>
         public AlunoController(IRepository repo, IMapper mapper)
         {
             _mapper = mapper;
@@ -43,6 +52,9 @@ namespace SmartSchool.WebAPI.Controllers
             },
         };*/
 
+        /// <sumary>
+        /// Método responsável por retornar todos os alunos
+        /// </sumary>
         [HttpGet]
         public IActionResult Get()
         {
@@ -51,6 +63,9 @@ namespace SmartSchool.WebAPI.Controllers
             return Ok(_mapper.Map<IEnumerable<AlunoDto>>(alunos));
         }
 
+        /// <sumary>
+        /// Método responsável por retornar apenas um aluno através do Id
+        /// </sumary>
         //api/aluno/1
         [HttpGet("{id:int}")]
         public IActionResult GetById(int id)
