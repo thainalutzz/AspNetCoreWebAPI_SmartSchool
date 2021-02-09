@@ -13,7 +13,7 @@ namespace SmartSchool.WebAPI.V2.Controllers
     /// Versão 2 do controlador de Aluno
     /// </sumary>
     [ApiVersion("2.0")]
-    [Route("api/v{version:apiVersion}[controller]")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     [ApiController]
     public class AlunoController : ControllerBase
     {
